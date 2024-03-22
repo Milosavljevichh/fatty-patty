@@ -1,0 +1,29 @@
+@font-face {
+    font-family: main;
+    src: url(fonts/Comic\ Block\ \ DEMO\ by\ Marta\ van\ Eck.ttf);
+}
+
+@font-face {
+    font-family: comicSans;
+    src: url(fonts/COMICSANS.TTF);
+}
+
+header {
+    background-image: url(imgs/dot-pattern.jpg);
+    background-size: 90%;
+    background-color: #D88D00;
+    background-blend-mode: soft-light;
+    border-bottom: #000 solid 6px;
+}
+
+li {
+    font-family: comicSans;
+    background-color: #FEECD8;
+    border: #000 solid 3px;
+    border-radius: 15px;
+}
+
+#logo {
+    width: 80px;
+    filter: drop-shadow(-6px 0px 3px #fff);
+}
