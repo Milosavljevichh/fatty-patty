@@ -38,8 +38,8 @@ li {
     border: #000 solid 3px;
 }
 
-main {
-    height: 90vh;
+#hero {
+    height: 90vh !important;
 }
 
 #hero {
@@ -70,10 +70,9 @@ p {
     transform: skew(12deg, -12deg);
 }
 
-#heroBtn,#offerBtn {
+#heroBtn,#offerBtn,#galleryBtn {
     font-family: comicSans;
     background-color: #69131B;
-    color: #fff;
     border-radius: 16px;
     border: #000 solid 4px;
     background-image: url(imgs/dot-pattern.jpg);
@@ -134,4 +133,18 @@ h1 {
 
 #offerBtn{
     background-size: 150%;
+}
+
+#showcase {
+    background-image: url(imgs/comic-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#galleryBtn {
+    background-color: #0c4d14;
+}
+
+#galleryBtn:hover {
+    background-color: #052f0a;
 }
