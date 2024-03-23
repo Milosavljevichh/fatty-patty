@@ -13,7 +13,6 @@ header {
     background-size: 80%;
     background-color: #D88D00;
     background-blend-mode: soft-light;
-    border-bottom: #000 solid 6px;
 }
 
 li {
@@ -47,15 +46,31 @@ main {
     background-image: url(imgs/hero-bg.jpg);
     background-size: cover;
     background-position: center;
-
+    /* border-bottom: #000 solid 8px; */
 }
 
-h1,h2, #heroBtn {
+p {
+    font-family: comicSans;
+}
+
+.border-dark {
+    border-color: #000 !important;
+}
+
+.border-5 {
+    border-width: 8px !important;
+}
+
+.rounded-3 {
+    border-radius: 1.5rem !important;
+}
+
+.skewed {
     font-family: main;
     transform: skew(12deg, -12deg);
 }
 
-#heroBtn {
+#heroBtn,#offerBtn {
     font-family: comicSans;
     background-color: #69131B;
     color: #fff;
@@ -68,7 +83,7 @@ h1,h2, #heroBtn {
     letter-spacing: 2px;
 }
 
-#heroBtn:hover {
+#heroBtn:hover,#offerBtn:hover {
     background-color: #520e15;
 }
 
@@ -78,4 +93,43 @@ h1,h2, #heroBtn {
 
 .fs-xl {
     font-size: 250%;
+}
+
+@media screen and (max-width:768px) {
+
+    #hero {
+        background-position: left top;
+    }
+    .rounded-3 {
+        border-radius: 1.2rem !important;
+    }
+}
+
+@media screen and (max-width:513px) {
+    header {
+    background-size: 250%;
+    }
+
+    .fs-xxl {
+        font-size: 290%;
+    }
+    
+    .fs-xl {
+        font-size: 190%;
+    }
+}
+
+#offers {
+    background-image: url(imgs/section-bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+h1 {
+    font-family: main;
+}
+
+#offerBtn{
+    background-size: 150%;
 }
