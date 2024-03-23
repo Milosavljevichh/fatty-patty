@@ -120,10 +120,12 @@ p {
 }
 
 #offers {
-    background-image: url(imgs/section-bg.jpg);
+    background-image: url(imgs/section-bg-orange.png);
     background-position: center;
     background-attachment: fixed;
-    background-size:cover;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: #30C842;
 }
 
 h1 {
