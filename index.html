@@ -75,7 +75,7 @@
                         <div class="align-self-center col-xl-7 px-2 px-xl-5 py-3 d-flex flex-column align-items-center justify-content-center">
                             <h1 class="display-1">LOREM IPSUM</h1>
                             <p class="fs-5 fs-md-4 fs-lg-4 fs-xl-2 text-center text-lg-start text-xl-start w-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>                            
-                        <button id="offerBtn" class="py-2 px-4 fw-bold fs-5 mt-4 text-uppercase w-75 text-white border border-dark border-4">
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#kontaktModal" class="btn py-2 offerBtn px-4 fw-bold fs-5 mt-4 text-uppercase w-75 text-white border border-dark border-4">
                             Order now!
                         </button>
                         </div>
@@ -86,7 +86,7 @@
                     <div class="align-self-center col-xl-7 px-2 px-xl-5 py-3 d-flex flex-column align-items-center justify-content-center">
                         <h1 class="display-1">LOREM IPSUM</h1>
                         <p class="fs-5 fs-md-4 fs-lg-4 fs-xl-2 text-center text-lg-start text-xl-start w-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>                            
-                        <button id="offerBtn" class="py-2 px-4 fw-bold fs-5 mt-4 text-uppercase w-75 text-white border border-dark border-4">
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#kontaktModal" class="btn py-2 offerBtn px-4 fw-bold fs-5 mt-4 text-uppercase w-75 text-white border border-dark border-4">
                             Order now!
                         </button>
                     </div>
@@ -104,7 +104,7 @@
                             <div class="align-self-center col-xl-7 px-2 px-xl-5 py-3 d-flex flex-column align-items-center justify-content-center">
                                 <h1 class="display-1">LOREM IPSUM</h1>
                                 <p class="fs-5 fs-md-4 fs-lg-4 fs-xl-2 text-center text-lg-start text-xl-start w-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>                            
-                            <button id="offerBtn" class="py-2 px-4 fw-bold fs-5 mt-4 text-uppercase w-75 text-white border border-dark border-4">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#kontaktModal" class="btn py-2 offerBtn px-4 fw-bold fs-5 mt-4 text-uppercase w-75 text-white border border-dark border-4">
                                 Order now!
                             </button>
                             </div>
@@ -201,7 +201,7 @@
                   </p>
               </div>
               <div class="row mt-5 justify-content-center">
-                <button id="offerBtn" class="py-2 w-75 fw-bold fs-6 fs-sm-6 fs-md-6 fs-lg-5 text-uppercase text-white border border-white border-3">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#kontaktModal" class="btn offerBtn py-2 w-75 fw-bold fs-6 fs-sm-6 fs-md-6 fs-lg-5 text-uppercase text-white border border-white border-3">
                     Order now!
                 </button>
               </div>
@@ -225,6 +225,56 @@
         </div>
         <div class="col">
             <p class="text-center m-0 pb-5">copyright &copy; Milosavljevichh</p>
+
+            <div class="modal fade" id="kontaktModal"  tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content bg-dark bg-gradient">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-3" id="modalLabel">Contact us!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form action="obrada.php" method="POST">
+                                <div class="form-group">
+                                    <label for="name">Full name</label>
+                                    <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="John Doe" />
+                                    <small id="nameHelp" class="form-text text-light">To help the delivery man identify you.</small>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col">
+                                        <label for="address">Address</label>
+                                        <input type="text" class="form-control" placeholder="Zdravka Čelara Belgrade..." id="address" />
+                                    </div>
+                                    <div class="col">
+                                        <label for="PhoneNumber">Phone Number</label>
+                                        <input type="number" class="form-control" placeholder="+069-252-2525" id="PhoneNumber">
+                                    </div>
+                                </div>
+                                <div class="form-group mt-2">
+                                    <label for="orderSelect">Order select</label>
+                                    <select class="form-control" id="orderSelect">
+                                    <option>Hamburger special....9.75&dollar;</option>
+                                    <option>Hotdog special....8.75&dollar;</option>
+                                    <option>Sandwich special....5.75&dollar;</option>
+                                    <option>Mix special....12.50&dollar;</option>
+                                    <option>Drink special....2&dollar;</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mt-2">
+                                    <label for="commentArea">Extra comment:</label>
+                                    <textarea class="form-control" id="commentArea" rows="3"></textarea>
+                                </div>
+                                <div class="form-group mt-2 justify-content-center d-flex">
+                                    <button type="button" class="btn btn-danger m-2" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-success m-2">Submit</button>
+                                </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                      </div>
+                    </div>
+                  </div>
+            </div>
         </div>
       </footer>
 

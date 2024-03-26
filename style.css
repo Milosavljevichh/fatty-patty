@@ -74,7 +74,7 @@ p {
     transform: skew(12deg, -12deg);
 }
 
-#heroBtn,#offerBtn,#galleryBtn {
+#heroBtn,.offerBtn,#galleryBtn {
     font-family: comicSans;
     background-color: #69131B;
     border-radius: 16px;
@@ -90,7 +90,7 @@ p {
     transition: all 0.4s;
 }
 
-#heroBtn:hover,#offerBtn:hover, #toTop:hover {
+#heroBtn:hover,.offerBtn:hover, #toTop:hover {
     cursor: pointer;
     background-color: #520e15;
 }
@@ -145,7 +145,7 @@ h1 {
     font-family: main;
 }
 
-#offerBtn{
+.offerBtn{
     background-size: 150%;
 }
 
