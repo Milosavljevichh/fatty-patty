@@ -53,7 +53,7 @@ a {
     /* border-bottom: #000 solid 8px; */
 }
 
-p {
+p,label,small {
     font-family: comicSans;
 }
 
@@ -141,6 +141,15 @@ p {
     background-color: #30C842;
 }
 
+#offersMain {
+    background-image: url(imgs/section-bg-green.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: #D88D00;
+}
+
 h1 {
     font-family: main;
 }
@@ -181,7 +190,7 @@ footer {
     height: 30px;
 }
 
-#galleryMain {
+#galleryMain,#formContact {
     background-attachment: fixed;
     background-image: url(imgs/dot-pattern.jpg);
     background-size: contain;
