@@ -180,3 +180,11 @@ footer {
     width: 30px;
     height: 30px;
 }
+
+#galleryMain {
+    background-attachment: fixed;
+    background-image: url(imgs/dot-pattern.jpg);
+    background-size: contain;
+    background-color: #69131B;
+    background-blend-mode:multiply;
+}
