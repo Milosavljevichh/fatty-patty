@@ -28,18 +28,10 @@ a {
 
 #logoImg {
     width: 80px;
-    filter: drop-shadow(-6px 0px 3px #fff);
 }
 
 #logo {
     font-family: comicSans;
-    color: #fff;
-}
-
-
-#toggler {
-    background-color: #fff;
-    border: #000 solid 3px;
 }
 
 #hero {
@@ -50,7 +42,6 @@ a {
     background-image: url(imgs/hero-bg.jpg);
     background-size: cover;
     background-position: center;
-    /* border-bottom: #000 solid 8px; */
 }
 
 p,label,small {
@@ -196,4 +187,9 @@ footer {
     background-size: contain;
     background-color: #69131B;
     background-blend-mode:multiply;
+}
+
+#toggler {
+    background-color: #fff;
+    border: #000 solid 3px;
 }

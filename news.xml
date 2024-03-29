@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Fatty Patty</title>
+        <link>https://milosavljevichh.github.io/fatty-patty/index.html</link>
+        <description>Be the first to know about our new deals!</description>
+
+        <item>
+            <title>Our offers.</title>
+            <link>https://milosavljevichh.github.io/fatty-patty/offers.html</link>
+            <description>What's new?</description>
+        </item>
+        <item>
+            <title>Gallery.</title>
+            <link>https://milosavljevichh.github.io/fatty-patty/gallery.html</link>
+            <description>New meals,new pictures!</description>
+        </item>
+    </channel>
+</rss>

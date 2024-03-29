@@ -5,3 +5,8 @@ TODO:
 -mozda dropdown li item u headeru, ali ne vidim potrebu za tim
 -uradjenji meta keywords, description, ikonica i ostatak SEO-a u headeru, istraziti
 da li jos nesto fali (sem sitemqap i robots)
+
+-napisi sitemap -D
+-dodat rss
+
+-dodati dugme u footeru za rss
