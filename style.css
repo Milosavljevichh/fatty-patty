@@ -76,6 +76,23 @@ p,label,small {
     letter-spacing: 2px;
 }
 
+.pulsate {
+	    animation: puls 1s ease-in-out infinite both;
+}
+
+ @keyframes puls {
+    0% {
+             transform: scale(1);
+    }
+    50% {
+            transform: scale(0.95);
+    }
+    100% {
+            transform: scale(1);
+    }
+  }
+  
+
 #toTop {
     background-color: #69131B;
     transition: all 0.4s;
