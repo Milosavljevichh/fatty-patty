@@ -193,3 +193,13 @@ footer {
     background-color: #fff;
     border: #000 solid 3px;
 }
+
+.authorTitle {
+    font-family: comicSans;
+}
+
+#author {
+    background-image: url(imgs/comic-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
